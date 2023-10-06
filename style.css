@@ -1,15 +1,18 @@
 /* Google font import */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html {
     font-family: "Montserrat", sans-serif;
 }
+
 /* style reset */
 *, ::before, ::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* body styles and flex */
 body{
     min-height: 100vh;
@@ -18,12 +21,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 /* cacl settings */
 .calculator{
     height: 60vh;
     min-width: 370px;
     max-width: 370px;
 }
+
 /* display settings */
 .display {
     width: 100%;
@@ -32,7 +37,6 @@ body{
     background-color: rgba(29, 27, 27, 0.151);
     box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);
-    box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);;
     color: white;
     word-break: break-all ;
     text-align: right;
@@ -42,19 +46,23 @@ body{
     padding-right: 5px;
     font-weight: bold;
 }
+
 /* bottom number settings */
 .currentNumber{
     font-size: 35px;
 }
+
 /* upper number settings */
 .previousnumber{
     color: rgb(182, 182, 182);
     font-size: 20px;
 }
+
 /* math sign settings */
 .mathSign {
     font-size: 22px;
 }
+
 /* buttons grid settings */
 .panel {
     height: 80%;
@@ -63,4 +71,74 @@ body{
     grid-template-rows: repeat(5, 1fr);
     gap: 2px;
 }
+/* button style settings */
+.panel button {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.366);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
 
+/* button hover settings */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.equals {
+    grid-row:-1/-3 ;
+    grid-column: -2/-1;
+}
+
+/* calculator history setting */
+.calculator-history {
+    height: 60vh;
+    margin: 20px;
+    width: 150px;
+    background-color: rgba(20, 27, 27, 0.151);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* history settings */
+.history {
+    list-style: none;
+}
+
+/* history title settings */
+.history-title {
+    padding-bottom: 6px;
+}
+
+/* history button settings */
+.history-btn {
+    color: white;
+    background: rgba(29, 27, 27, 0.603) ;
+    border: none;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    outline: none;
+    margin: 5px auto;
+}
+
+/* active button settings */
+.history-btn.active{
+    display: block;
+
+}
+
+/* History item settings */
+.history-item {
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(29, 27, 27, 0.233);
+    padding-bottom: 5px;
+}
