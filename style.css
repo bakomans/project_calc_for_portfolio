@@ -1,0 +1,66 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+/* style reset */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body styles and flex */
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #a7e4b2,#45db52,#2dce98,#3a6dc5,#4d56bd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* cacl settings */
+.calculator{
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+}
+/* display settings */
+.display {
+    width: 100%;
+    min-width: 20%;
+    max-height: min-content;
+    background-color: rgba(29, 27, 27, 0.151);
+    box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);
+    box-shadow: 29px 25px 31px 5px rgba(0,0,0,0.75);;
+    color: white;
+    word-break: break-all ;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 5px;
+    font-weight: bold;
+}
+/* bottom number settings */
+.currentNumber{
+    font-size: 35px;
+}
+/* upper number settings */
+.previousnumber{
+    color: rgb(182, 182, 182);
+    font-size: 20px;
+}
+/* math sign settings */
+.mathSign {
+    font-size: 22px;
+}
+/* buttons grid settings */
+.panel {
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+}
+
