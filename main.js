@@ -1,3 +1,5 @@
+// main variables
+
 const currentNumber = document.querySelector('.currentNumber');
 
 const previousNumber = document.querySelector('.previousNumber p');
@@ -16,7 +18,7 @@ const calculatorHistory = document.querySelector('.history');
 
 const historyBtn = document.querySelector('.history-btn');
 
-
+// calc functionality
 let result = '';
 
 
